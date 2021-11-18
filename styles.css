@@ -1,6 +1,7 @@
 body {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
+  color: #FF3D68;
 }
 
 .checkbox {
@@ -10,10 +11,8 @@ body {
 .checkbox + label {
   position: relative;
   padding: 0 0 0 40px;
-  cursor: pointer;
 }
-.checkbox + label::before,
-.checkbox + label::after {
+.checkbox + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -21,15 +20,20 @@ body {
   height: 20px;
   border-radius: 5px;
   font-size: 15px;
-}
-.checkbox + label::before {
   background: #e9edf5;
-  border: solid 2px #a2cdcd;
+  border: 2px solid #A2D2FF;
 }
-.checkbox:checked + label:before {
-  content: "\2713";
-  color: #fff;
-  text-align: center;
-  box-shadow: 0 2px 5px #6e8a8a;
-  background: #a2cdcd;
+.checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 1px;
+  width: 7px;
+  height: 10px;
+  border: 3px solid #A2D2FF;
+  border-left-style: hidden;
+  border-top-style: hidden;
+  transform: rotate(45deg);
+ box-shadow: 2px 2px 2px grey;
 }
+
