@@ -11,6 +11,7 @@ body {
 .checkbox + label {
   position: relative;
   padding: 0 0 0 40px;
+/*   best use padding-left:40px; */
 }
 .checkbox + label::before {
   content: "";
@@ -22,6 +23,7 @@ body {
   font-size: 15px;
   background: #e9edf5;
   border: 2px solid #A2D2FF;
+/*   why u use font-size? */
 }
 .checkbox:checked + label:after {
   content: "";
@@ -35,5 +37,6 @@ body {
   border-top-style: hidden;
   transform: rotate(45deg);
  box-shadow: 2px 2px 2px grey;
+/*  use border-right and border-bottom  */
 }
 
